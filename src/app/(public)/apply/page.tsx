@@ -297,7 +297,7 @@ function ApplyPageContent() {
           return (
             <CountrySelect
               value={selectedCountry?.cca2 || countryValue}
-              onValueChange={(code) => handleFieldChange(applicantId, field.id, code)}
+              onChange={(code) => handleFieldChange(applicantId, field.id, code)}
               placeholder={field.placeholder || t.public.home.selectNationality}
               disabled={disabled}
             />
